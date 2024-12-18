@@ -33,9 +33,9 @@ Game::~Game()
 void Game::Run()
 {
     if(!Init())
-    isRunning = false;
+        isRunning = false;
     
-    if(isRunning)
+    while(isRunning)
     {
         Input();
         Update();
