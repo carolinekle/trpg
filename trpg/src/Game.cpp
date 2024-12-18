@@ -3,7 +3,7 @@
 
 bool Game::Init()
 {
-    return false;
+    return true;
 }
 
 void Game::Input()
@@ -40,6 +40,7 @@ void Game::Run()
         Input();
         Update();
         Draw();
+        
     }
     std::cout << "run\n";
 }
